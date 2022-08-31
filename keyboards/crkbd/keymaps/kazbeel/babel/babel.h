@@ -39,6 +39,7 @@ enum babel_keycodes {
     BABEL_DESKTOP_PREV,
     BABEL_SYSTEM_SEARCH,
     BABEL_CONSOLE,
+    BABEL_ES_TILD,
 
     BABEL_SET_OS_LINUX,
     BABEL_SET_OS_WINDOWS,
@@ -73,6 +74,7 @@ uint8_t BABEL_get_current_os(void);
 #define BBL_DESKTOP_PREV        BABEL_DESKTOP_PREV
 #define BBL_SYSTEM_SEARCH       BABEL_SYSTEM_SEARCH
 #define BBL_CONSOLE             BABEL_CONSOLE
+#define BBL_ES_TILD             BABEL_ES_TILD
 
 #define BBL_OS_LINUX      BABEL_OS_LINUX
 #define BBL_OS_WINDOWS    BABEL_OS_WINDOWS

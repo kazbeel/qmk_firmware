@@ -33,5 +33,7 @@ void BABEL_process_mac(uint16_t keycode) {
 		SEND_STRING(SS_DOWN(X_LGUI) SS_TAP(X_SPC) SS_UP(X_LGUI));
     } else if (keycode == BABEL_CONSOLE) {
         SEND_STRING(SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_SPC) SS_UP(X_LALT) SS_UP(X_LCTRL));
+    } else if (keycode == BABEL_ES_TILD) {
+        SEND_STRING(SS_DOWN(X_RALT) SS_TAP(X_SCLN) SS_UP(X_RALT));
     }
 }
