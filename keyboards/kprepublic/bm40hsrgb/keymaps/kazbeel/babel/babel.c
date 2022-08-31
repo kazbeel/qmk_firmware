@@ -2,8 +2,6 @@
 
 #include "babel.h"
 
-uint8_t babel_current_os = BABEL_OS_LINUX;
-
 __attribute__((weak)) void BABEL_os_switched_callback(uint8_t new_os) {}
 
 static uint8_t current_os = BABEL_OS_LINUX;
