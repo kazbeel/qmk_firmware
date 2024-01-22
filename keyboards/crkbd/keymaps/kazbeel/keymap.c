@@ -38,49 +38,49 @@ enum layer_names {
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [BASE] = LAYOUT(
+  [BASE] = LAYOUT_split_3x6_3(
     XXXXXXX,  KC_Q,   KC_W,   KC_E,   KC_R,         KC_T,                       KC_Y,     KC_U,   KC_I,      KC_O,    KC_P,      KC_BACKSPACE,
     KC_ESC,   A_CTL,  S_ALT,  D_GUI,  F_SFT,        KC_G,                       KC_H,     J_SFT,  K_GUI,     L_ALT,   NTIL_CTL,  ES_ACUT,
     KC_LSFT,  KC_Z,   KC_X,   KC_C,   KC_V,         KC_B,                       KC_N,     KC_M,   KC_COMMA,  KC_DOT,  ES_MINS,   XXXXXXX,
                                       BBL_CONSOLE,  NAV_TAB,  NUM_ENT,  KC_SPC, MO(SYM),  MO(FUNC)
   ),
 
-//   [GAMING] = LAYOUT(
+//   [GAMING] = LAYOUT_split_3x6_3(
 //     XXXXXXX,  KC_Q,   KC_W,   KC_E,   KC_R,         KC_T,                      KC_Y,     KC_U,     KC_I,      KC_O,     KC_P,      KC_BACKSPACE,
 //     KC_ESC,   A_CTL,  S_ALT,  D_GUI,  F_SFT,        KC_G,                      KC_H,     J_SFT,    K_GUI,     L_ALT,    NTIL_CTL,  ES_ACUT,
 //     KC_LSFT,  KC_Z,   KC_X,   KC_C,   KC_V,         KC_B,                      KC_N,     KC_M,     KC_COMMA,  KC_DOT,   ES_MINS,   XXXXXXX,
 //                                       BBL_CONSOLE,  NAV_TAB, NUM_ENT  KC_SPC,  MO(SYM),  MO(FUNC)
 //   ),
 
-  [NAV] = LAYOUT(
-    XXXXXXX,  XXXXXXX,   XXXXXXX,  XXXXXXX,   XXXXXXX,    XXXXXXX,                       XXXXXXX,  XXXXXXX,    XXXXXXX,  XXXXXXX,   XXXXXXX,  XXXXXXX,
-    XXXXXXX,  KC_LCTL,   KC_LALT,  KC_LGUI,   KC_LSFT,    XXXXXXX,                       KC_LEFT,  KC_DOWN,    KC_UP,    KC_RIGHT,  XXXXXXX,  XXXXXXX,
-    XXXXXXX,  BBL_UNDO,  BBL_CUT,  BBL_COPY,  BBL_PASTE,  BBL_REDO,                      KC_HOME,  KC_PGDOWN,  KC_PGUP,  KC_END,    XXXXXXX,  XXXXXXX,
+  [NAV] = LAYOUT_split_3x6_3(
+    XXXXXXX,  XXXXXXX,   XXXXXXX,  XXXXXXX,   XXXXXXX,    XXXXXXX,                       XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,   XXXXXXX,  XXXXXXX,
+    XXXXXXX,  KC_LCTL,   KC_LALT,  KC_LGUI,   KC_LSFT,    XXXXXXX,                       KC_LEFT,  KC_DOWN,  KC_UP,    KC_RIGHT,  XXXXXXX,  XXXXXXX,
+    XXXXXXX,  BBL_UNDO,  BBL_CUT,  BBL_COPY,  BBL_PASTE,  BBL_REDO,                      KC_HOME,  KC_PGDN,  KC_PGUP,  KC_END,    XXXXXXX,  XXXXXXX,
                                               _______,    _______,   XXXXXXX,  _______,  XXXXXXX,  XXXXXXX
   ),
 
-  [NUM] = LAYOUT(
+  [NUM] = LAYOUT_split_3x6_3(
     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                      KC_PERC,  KC_7,  KC_8,  KC_9,  KC_PSLS,  KC_BACKSPACE,
     XXXXXXX,  KC_LCTL,  KC_LALT,  KC_LGUI,  KC_LSFT,  XXXXXXX,                      ES_LPRN,  KC_4,  KC_5,  KC_6,  KC_PPLS,  KC_PAST,
     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                      ES_RPRN,  KC_1,  KC_2,  KC_3,  KC_PMNS,  ES_EQL,
                                             XXXXXXX,  XXXXXXX,  _______,  _______,  KC_0,     KC_DOT
   ),
 
-  [SYM] = LAYOUT(
+  [SYM] = LAYOUT_split_3x6_3(
     ES_CIRC,      ES_PIPE,  ES_AT,    KC_PERC,  KC_DLR,   XXXXXXX,                        XXXXXXX,  ES_LBRC,  ES_RBRC,  ES_IQUE,  ES_QUES,  KC_DELETE,
     BBL_ES_TILD,  ES_AMPR,  ES_HASH,  ES_BSLS,  ES_SLSH,  XXXXXXX,                        XXXXXXX,  ES_LPRN,  ES_RPRN,  ES_EQL,   ES_PLUS,  ES_ASTR,
     XXXXXXX,      ES_LABK,  ES_RABK,  ES_DQUO,  ES_QUOT,  ES_GRV,                         XXXXXXX,  ES_LCBR,  ES_RCBR,  ES_IEXL,  KC_EXLM,  XXXXXXX,
                                                 XXXXXXX,  MO(MEDIA),  XXXXXXX,  _______,  XXXXXXX,  XXXXXXX
   ),
 
-  [MEDIA] = LAYOUT(
-    RESET,    XXXXXXX,       RGB_TOG,  RGB_MOD,  XXXXXXX,  XXXXXXX,                     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  BBL_LOCK,        XXXXXXX,
+  [MEDIA] = LAYOUT_split_3x6_3(
+    QK_BOOT,  XXXXXXX,       RGB_TOG,  RGB_MOD,  XXXXXXX,  XXXXXXX,                     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  BBL_LOCK,        XXXXXXX,
     XXXXXXX,  BBL_OS_SHIFT,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                     XXXXXXX,  KC_MPRV,  KC_MPLY,  KC_MNXT,  BBL_SUSPEND,     XXXXXXX,
     XXXXXXX,  XXXXXXX,       XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                     XXXXXXX,  KC_VOLD,  KC_MUTE,  KC_VOLU,  BBL_POWER_DOWN,  XXXXXXX,
                                                  XXXXXXX,  _______,  XXXXXXX, _______,  XXXXXXX,  XXXXXXX
   ),
 
-  [FUNC] = LAYOUT(
+  [FUNC] = LAYOUT_split_3x6_3(
     XXXXXXX,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    XXXXXXX,                     XXXXXXX,           XXXXXXX,          BBL_SYSTEM_SEARCH,    XXXXXXX,           XXXXXXX,  XXXXXXX,
     XXXXXXX,  KC_F5,    KC_F6,    KC_F7,    KC_F8,    XXXXXXX,                     BBL_DESKTOP_PREV,  BBL_APP_WINDOWS,  BBL_MULTI_TASK_VIEW,  BBL_DESKTOP_NEXT,  XXXXXXX,  XXXXXXX,
     XXXXXXX,  KC_F9,    KC_F10,   KC_F11,   KC_F12,   XXXXXXX,                     XXXXXXX,           BBL_SCREENSHOT,   XXXXXXX,              XXXXXXX,           XXXXXXX,  XXXXXXX,
@@ -170,7 +170,7 @@ void BABEL_os_switched_callback(uint8_t new_os) {
     token = defer_exec(2000, turn_off_os_mode_led, NULL);
 }
 
-void rgb_matrix_indicators_user(void) {
+bool rgb_matrix_indicators_user(void) {
     if(show_os_mode_change) {
         switch(current_os) {
             case BBL_OS_LINUX:
@@ -189,6 +189,8 @@ void rgb_matrix_indicators_user(void) {
             break;
         }
     }
+
+    return false;
 }
 
 void keyboard_post_init_user(void) {
