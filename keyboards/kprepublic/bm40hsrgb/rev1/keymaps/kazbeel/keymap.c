@@ -17,7 +17,7 @@
 
 // Multifunction layer toggle and simple keycode
 #define NAV_TAB   LT(NAV, KC_TAB)
-#define NUM_SPC   LT(NUM, KC_SPC)
+// #define NUM_SPC   LT(NUM, KC_SPC)
 
 enum custom_keycodes {
     NEXT_CUSTOM_KEYCODE = BABEL_END_RANGE,
@@ -35,10 +35,10 @@ enum layer_names {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT_planck_mit(
-    XXXXXXX,  KC_Q,     KC_W,     KC_E,         KC_R,     KC_T,    KC_Y,  KC_U,     KC_I,      KC_O,     KC_P,      KC_BSPC,
-    KC_ESC,   A_CTL,    S_ALT,    D_GUI,        F_SFT,    KC_G,    KC_H,  J_SFT,    K_GUI,     L_ALT,    NTIL_CTL,  ES_ACUT,
-    KC_LSFT,  KC_Z,     KC_X,     KC_C,         KC_V,     KC_B,    KC_N,  KC_M,     KC_COMMA,  KC_DOT,   ES_MINS,   KC_ENT,
-    XXXXXXX,  XXXXXXX,  XXXXXXX,  BBL_CONSOLE,  NAV_TAB,  NUM_SPC,        MO(SYM),  MO(FUNC),  XXXXXXX,  XXXXXXX,   XXXXXXX
+    BBL_CONSOLE,  KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,    KC_Y,     KC_U,     KC_I,      KC_O,     KC_P,      KC_BSPC,
+    KC_ESC,       A_CTL,    S_ALT,    D_GUI,    F_SFT,    KC_G,    KC_H,     J_SFT,    K_GUI,     L_ALT,    NTIL_CTL,  ES_ACUT,
+    KC_LSFT,      KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,    KC_N,     KC_M,     KC_COMMA,  KC_DOT,   ES_MINS,   KC_ENT,
+    XXXXXXX,      XXXXXXX,  XXXXXXX,  MO(NUM),  NAV_TAB,  KC_SPC,            MO(SYM),  MO(FUNC),  XXXXXXX,  XXXXXXX,   XXXXXXX
   ),
 
   [GAMING] = LAYOUT_planck_mit(
