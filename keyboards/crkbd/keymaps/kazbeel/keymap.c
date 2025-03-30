@@ -16,7 +16,7 @@ static const char PROGMEM crkbd_logo[] = {0x80, 0x81, 0x82, 0x83, 0x84, 0x85, 0x
 
 #define J_SFT     LSFT_T(KC_J)
 #define K_GUI     LGUI_T(KC_K)
-#define L_ALT     LALT_T(KC_L)
+#define L_ALT     RALT_T(KC_L)
 #define NTIL_CTL  LCTL_T(ES_NTIL)
 
 // Multifunction layer toggle and simple keycode
