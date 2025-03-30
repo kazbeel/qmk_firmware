@@ -32,7 +32,8 @@ void BABEL_process_linux(uint16_t keycode) {
     } else if (keycode == BABEL_SYSTEM_SEARCH) {
         SEND_STRING(SS_DOWN(X_LEFT_CTRL) SS_DOWN(X_LEFT_SHIFT) SS_TAP(X_SPC) SS_UP(X_LEFT_CTRL) SS_UP(X_LEFT_SHIFT));
     } else if (keycode == BABEL_CONSOLE) {
-        SEND_STRING(SS_DOWN(X_LEFT_CTRL) SS_DOWN(X_LEFT_ALT) SS_DOWN(X_LEFT_GUI) SS_TAP(X_SPC) SS_UP(X_LEFT_GUI) SS_UP(X_LEFT_ALT) SS_UP(X_LEFT_CTRL));
+        // Specific for Linux Mint with Cinnamon. It toggles the app in the second position in the status bar (on the top)
+        SEND_STRING(SS_DOWN(X_LEFT_GUI) SS_TAP(X_2) SS_UP(X_LEFT_GUI));
     } else if (keycode == BABEL_ES_TILD) {
         SEND_STRING(SS_DOWN(X_RIGHT_ALT) SS_TAP(X_4) SS_UP(X_RIGHT_ALT));
     }
