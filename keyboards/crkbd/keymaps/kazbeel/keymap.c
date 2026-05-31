@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [MEDIA] = LAYOUT_split_3x6_3(
-    QK_BOOT,  XXXXXXX,       RGB_TOG,  RGB_MOD,  XXXXXXX,  XXXXXXX,                     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  BBL_LOCK,        XXXXXXX,
+    QK_BOOT,  XXXXXXX,       RM_TOGG,  RM_NEXT,  XXXXXXX,  XXXXXXX,                     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  BBL_LOCK,        XXXXXXX,
     XXXXXXX,  BBL_OS_SHIFT,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                     XXXXXXX,  KC_MPRV,  KC_MPLY,  KC_MNXT,  BBL_SUSPEND,     XXXXXXX,
     XXXXXXX,  XXXXXXX,       XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                     XXXXXXX,  KC_VOLD,  KC_MUTE,  KC_VOLU,  BBL_POWER_DOWN,  XXXXXXX,
                                                  XXXXXXX,  _______,  XXXXXXX, _______,  XXXXXXX,  XXXXXXX
